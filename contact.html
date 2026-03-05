@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - Loving Homes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="settings-sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>الإعدادات</h3>
+            <button id="close-sidebar">×</button>
+        </div>
+        <div class="setting-item">
+            <span>الوضع الداكن</span>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+    <div id="sidebar-overlay" class="overlay"></div>
+
+    <header class="main-header">
+        <img src="images/settings.png" alt="Settings" class="settings-img" id="open-settings">
+        <div class="header-center">
+            <img src="images/paw.png" alt="Paw" class="paw-img">
+            <h1>Loving Homes</h1>
+        </div>
+        <img src="images/logo.png" alt="logo" class="logo-full-height">
+    </header>
+
+    <nav class="navbar">
+        <button class="nav-button">الصفحة الرئيسية</button>
+        <button class="nav-button">المرافق المقدمة</button>
+        <button class="nav-button">الحزم المقدمة</button>
+        <button class="nav-button">اتصل بنا</button>
+    </nav>
+
+    <div class="contact-container">
+        <div class="contact-sticker">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label>الاسم:</label>
+                    <input type="text" id="user-name" required>
+                </div>
+                <div class="form-group">
+                    <label>البريد الالكتروني:</label>
+                    <input type="email" id="user-email" required>
+                </div>
+                <div class="form-group">
+                    <label>الرسالة:</label>
+                    <textarea id="user-message" rows="4" required placeholder="اكتب رسالتك هنا..."></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="submit-btn">ارسال</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

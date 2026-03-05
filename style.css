@@ -1,0 +1,692 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #d1d1d1; 
+    direction: rtl; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+.main-header {
+    background-color: #165100;
+    height: 120px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 40px 0 0; 
+}
+.logo-full-height { height: 120px; width: auto; }
+.settings-img { height: 80px; width: auto; cursor: pointer; } 
+
+.header-center { display: flex; align-items: center; gap: 15px; color: white; }
+.header-center h1 { font-size: 55px; margin: 0; font-family: 'Times New Roman', serif; }
+.paw-img { height: 65px; width: auto; }
+.navbar, .footer-action { 
+    display: flex; 
+    justify-content: center; 
+    gap: 25px; 
+    margin: 40px 0; 
+}
+.nav-button, .other-facilities-btn, .submit-btn {
+    background-color: #A98155; 
+    color: black; 
+    border: none;
+    padding: 12px 40px; 
+    border-radius: 40px; 
+    font-size: 24px;
+    font-weight: bold; 
+    cursor: pointer;
+    transition: 0.3s ease; 
+}
+.nav-button:hover, .other-facilities-btn:hover, .submit-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+.intro-container:hover, .card-box:hover, .sticker-card:hover, .package-sticker:hover, .contact-sticker:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    cursor: pointer; 
+}
+.intro-section { display: flex; flex-direction: column; align-items: center; margin-bottom: 60px; }
+.intro-container {
+    background-color: white; 
+    border: 5px solid #A98155; 
+    border-radius: 80px;
+    width: 85%; 
+    padding: 50px 70px; 
+    transition: 0.4s ease;
+}
+.intro-container p { font-size: 28px; line-height: 1.8; text-align: center; margin: 0; }
+.cards-layout { display: flex; justify-content: center; gap: 50px; padding-bottom: 80px; }
+.card-box {
+    background-color: white; 
+    border: 12px solid #A98155; 
+    border-radius: 45px;
+    width: 320px; 
+    height: 450px; 
+    padding: 25px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    transition: 0.4s ease;
+}
+.card-box img { width: 95%; height: 220px; border-radius: 50%; margin-top: auto; object-fit: cover; }
+
+.facilities-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 50px;
+    max-width: 1300px; 
+    margin: 0 auto;
+}
+.sticker-card {
+    background-color: white;
+    border: 10px solid #A98155; 
+    border-radius: 45px;
+    width: 320px; 
+    height: 520px; 
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s ease;
+}
+.sticker-text {
+    font-size: 22px; 
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    color: black;
+    margin-bottom: 15px;
+}
+.sticker-card img {
+    width: 100%;
+    height: 220px; 
+    border-radius: 20px;
+    object-fit: cover;
+    margin-top: auto; 
+}
+.packages-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.package-sticker {
+    background-color: white;
+    border: 10px solid #A98155; 
+    border-radius: 60px; 
+    width: 100%;
+    padding: 40px 60px;
+    transition: 0.4s ease;
+}
+.package-text {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    color: black;
+    margin: 0;
+}
+.package-text strong {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.contact-sticker {
+    background-color: white;
+    border: 15px solid #A98155; 
+    border-radius: 60px;
+    width: 80%;
+    max-width: 900px;
+    padding: 60px 80px;
+}
+.form-group {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-group label {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+.form-group input, .form-group textarea {
+    background-color: #e0e0e0; 
+    border: none;
+    border-radius: 40px;
+    padding: 15px 30px;
+    font-size: 22px;
+    font-family: inherit;
+    outline: none;
+}
+.form-group textarea {
+    border-radius: 25px;
+    resize: none;
+}
+.form-submit {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 20px;
+}
+.submit-btn {
+    padding: 10px 60px;
+    font-size: 30px;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -320px; 
+    width: 280px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+    transition: 0.4s ease;
+    z-index: 1000;
+    padding: 25px;
+}
+.sidebar.active { right: 0; }
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #A98155;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.sidebar-header h3 { margin: 0; color: #165100; font-size: 28px; }
+#close-sidebar { background: none; border: none; font-size: 35px; cursor: pointer; }
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 999;
+}
+.overlay.active { display: block; }
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px; width: 22px;
+    left: 4px; bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+input:checked + .slider { background-color: #165100; }
+input:checked + .slider:before { transform: translateX(30px); }
+body.dark-mode { background-color: #1a1a1a; color: white; }
+
+body.dark-mode .intro-container, 
+body.dark-mode .card-box, 
+body.dark-mode .sticker-card, 
+body.dark-mode .package-sticker, 
+body.dark-mode .contact-sticker,
+body.dark-mode .sidebar {
+    background-color: #2d2d2d;
+    border-color: #7a5d3e; 
+}
+body.dark-mode .intro-container p,
+body.dark-mode .sticker-text,
+body.dark-mode .package-text,
+body.dark-mode .form-group label,
+body.dark-mode .sidebar-header h3 {
+    color: white;
+}
+body.dark-mode .form-group input, 
+body.dark-mode .form-group textarea {
+    background-color: #444;
+    color: white;
+}
+@media (max-width: 1024px) {
+    .main-header {
+        height: 100px;
+        padding: 0 20px 0 0;
+    }
+    .logo-full-height {
+        height: 100px;
+    }
+    .settings-img {
+        height: 60px;
+    }
+    .header-center h1 {
+        font-size: 40px;
+    }
+    .paw-img {
+        height: 50px;
+    }
+    .navbar {
+        gap: 15px;
+        margin: 25px 0;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+    .nav-button {
+        padding: 10px 25px;
+        font-size: 18px;
+    }
+    .intro-container {
+        width: 90%;
+        padding: 30px 40px;
+        border-radius: 50px;
+    }
+    .intro-container p {
+        font-size: 22px;
+    }
+    .cards-layout {
+        gap: 30px;
+        padding-bottom: 50px;
+    }
+    .card-box {
+        width: 280px;
+        height: 400px;
+    }
+    .card-box img {
+        height: 180px;
+    }
+    .facilities-grid {
+        padding: 20px 20px;
+        gap: 30px;
+    }
+    .sticker-card {
+        width: 280px;
+        height: 460px;
+    }
+    .sticker-text {
+        font-size: 18px;
+    }
+    .sticker-card img {
+        height: 180px;
+    }
+    .packages-list {
+        padding: 20px 20px;
+    }
+    .package-sticker {
+        padding: 30px 40px;
+    }
+    .package-text {
+        font-size: 18px;
+    }
+    .package-text strong {
+        font-size: 20px;
+    }
+    .contact-sticker {
+        width: 90%;
+        padding: 40px 50px;
+    }
+    .form-group label {
+        font-size: 26px;
+    }
+    .form-group input,
+    .form-group textarea {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+    .submit-btn {
+        font-size: 24px;
+        padding: 10px 40px;
+    }
+}
+@media (max-width: 768px) {
+    .main-header {
+        height: 80px;
+        padding: 0 15px 0 0;
+    }
+    .logo-full-height {
+        height: 70px;
+    }
+    .settings-img {
+        height: 45px;
+    }
+    .header-center h1 {
+        font-size: 28px;
+    }
+    .paw-img {
+        height: 35px;
+    }
+    .navbar {
+        gap: 10px;
+        margin: 20px 0;
+    }
+    .nav-button {
+        padding: 8px 18px;
+        font-size: 14px;
+        border-radius: 30px;
+    }
+    .intro-section {
+        margin-bottom: 40px;
+    }
+    .intro-container {
+        width: 92%;
+        padding: 25px 30px;
+        border-radius: 40px;
+        border-width: 4px;
+    }
+    .intro-container p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .cards-layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding-bottom: 40px;
+    }
+    .card-box {
+        width: 85%;
+        max-width: 320px;
+        height: auto;
+        min-height: 350px;
+        padding: 20px;
+        border-width: 8px;
+        border-radius: 35px;
+    }
+    .card-box img {
+        height: 150px;
+        margin-top: 15px;
+    }
+    .card-label {
+        font-size: 20px;
+    }
+    .large-text {
+        font-size: 22px;
+    }
+    .facilities-grid {
+        padding: 15px 15px;
+        gap: 25px;
+    }
+    .sticker-card {
+        width: 85%;
+        max-width: 320px;
+        height: auto;
+        min-height: 380px;
+        padding: 20px;
+        border-width: 8px;
+    }
+    .sticker-text {
+        font-size: 16px;
+    }
+    .sticker-card img {
+        height: 150px;
+        margin-top: 15px;
+    }
+    .packages-list {
+        padding: 15px 15px;
+        gap: 20px;
+    }
+    .package-sticker {
+        padding: 25px 30px;
+        border-width: 8px;
+        border-radius: 40px;
+    }
+    .package-text {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .package-text strong {
+        font-size: 18px;
+    }
+    .contact-container {
+        padding: 15px 0;
+    }
+    .contact-sticker {
+        width: 92%;
+        padding: 30px 25px;
+        border-width: 10px;
+        border-radius: 40px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        font-size: 22px;
+    }
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px;
+        padding: 10px 18px;
+        border-radius: 30px;
+    }
+    .form-submit {
+        justify-content: center;
+    }
+    .submit-btn {
+        font-size: 20px;
+        padding: 10px 35px;
+        border-radius: 30px;
+    }
+    .footer-action {
+        margin: 30px 0;
+    }
+    .other-facilities-btn {
+        padding: 10px 30px;
+        font-size: 18px;
+        border-radius: 30px;
+    }
+    .sidebar {
+        width: 250px;
+        right: -280px;
+    }
+    .setting-item {
+        font-size: 18px;
+    }
+    .switch {
+        width: 50px;
+        height: 26px;
+    }
+    .slider:before {
+        height: 18px;
+        width: 18px;
+    }
+    input:checked + .slider:before {
+        transform: translateX(24px);
+    }
+}
+@media (max-width: 480px) {
+    .main-header {
+        height: 70px;
+        padding: 0 10px 0 0;
+    }
+    .logo-full-height {
+        height: 55px;
+    }
+    .settings-img {
+        height: 35px;
+    }
+    .header-center {
+        gap: 8px;
+    }
+    .header-center h1 {
+        font-size: 20px;
+    }
+    .paw-img {
+        height: 28px;
+    }
+    .navbar {
+        gap: 8px;
+        margin: 15px 0;
+        padding: 0 5px;
+    }
+    .nav-button {
+        padding: 6px 12px;
+        font-size: 12px;
+        border-radius: 25px;
+    }
+    .intro-section {
+        margin-bottom: 30px;
+    }
+    .intro-title {
+        font-size: 24px;
+    }
+    .intro-container {
+        width: 94%;
+        padding: 20px 20px;
+        border-radius: 30px;
+        border-width: 3px;
+    }
+    .intro-container p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .cards-layout {
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+    .card-item {
+        width: 100%;
+    }
+    .card-label {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .card-box {
+        width: 90%;
+        max-width: 280px;
+        min-height: 300px;
+        padding: 15px;
+        border-width: 6px;
+        border-radius: 30px;
+    }
+    .card-box img {
+        height: 120px;
+    }
+    .large-text {
+        font-size: 18px;
+    }
+    .facilities-grid {
+        padding: 10px 10px;
+        gap: 20px;
+    }
+    .sticker-card {
+        width: 90%;
+        max-width: 280px;
+        min-height: 320px;
+        padding: 15px;
+        border-width: 6px;
+        border-radius: 30px;
+    }
+    .sticker-text {
+        font-size: 14px;
+    }
+    .sticker-card img {
+        height: 120px;
+        border-radius: 15px;
+    }
+    .packages-list {
+        padding: 10px 10px;
+        gap: 15px;
+    }
+    .package-sticker {
+        padding: 20px 20px;
+        border-width: 6px;
+        border-radius: 30px;
+    }
+    .package-text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .package-text strong {
+        font-size: 16px;
+    }
+    .contact-container {
+        padding: 10px 0;
+    }
+    .contact-sticker {
+        width: 94%;
+        padding: 20px 15px;
+        border-width: 8px;
+        border-radius: 30px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        font-size: 18px;
+    }
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 8px 15px;
+        border-radius: 25px;
+    }
+    .form-group textarea {
+        border-radius: 20px;
+    }
+    .form-submit {
+        margin-top: 15px;
+    }
+    .submit-btn {
+        font-size: 18px;
+        padding: 8px 30px;
+        border-radius: 25px;
+    }
+    .footer-action {
+        margin: 25px 0;
+    }
+    .other-facilities-btn {
+        padding: 8px 25px;
+        font-size: 16px;
+        border-radius: 25px;
+    }
+    .sidebar {
+        width: 220px;
+        right: -250px;
+        padding: 20px;
+    }
+    .sidebar-header h3 {
+        font-size: 22px;
+    }
+    #close-sidebar {
+        font-size: 28px;
+    }
+    .setting-item {
+        font-size: 16px;
+    }
+    .switch {
+        width: 44px;
+        height: 22px;
+    }
+    .slider:before {
+        height: 16px;
+        width: 16px;
+        left: 3px;
+        bottom: 3px;
+    }
+    input:checked + .slider:before {
+        transform: translateX(22px);
+    }
+}

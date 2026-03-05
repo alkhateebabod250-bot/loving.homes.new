@@ -9,15 +9,26 @@
 <body>
     <div id="settings-sidebar" class="sidebar">
         <div class="sidebar-header">
-            <h3>الإعدادات</h3>
+            <h3 data-i18n="settings">الإعدادات</h3>
             <button id="close-sidebar">×</button>
         </div>
         <div class="setting-item">
-            <span>الوضع الداكن</span>
+            <span data-i18n="darkMode">الوضع الداكن</span>
             <label class="switch">
                 <input type="checkbox" id="dark-mode-toggle">
                 <span class="slider"></span>
             </label>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="fontSize">حجم الخط</span>
+            <div class="setting-controls">
+                <button class="setting-btn" id="font-decrease">A-</button>
+                <button class="setting-btn" id="font-increase">A+</button>
+            </div>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="language">اللغة</span>
+            <button class="setting-btn" id="lang-toggle">عربي</button>
         </div>
     </div>
     <div id="sidebar-overlay" class="overlay"></div>
@@ -32,24 +43,23 @@
     </header>
 
     <nav class="navbar">
-        <button class="nav-button">الصفحة الرئيسية</button>
-        <button class="nav-button">المرافق المقدمة</button>
-        <button class="nav-button">الحزم المقدمة</button>
-        <button class="nav-button">اتصل بنا</button>
+        <button class="nav-button" data-i18n="home">الصفحة الرئيسية</button>
+        <button class="nav-button" data-i18n="facilities">المرافق المقدمة</button>
+        <button class="nav-button" data-i18n="packages">الحزم المقدمة</button>
+        <button class="nav-button" data-i18n="contact">اتصل بنا</button>
     </nav>
 
     <div class="packages-list">
         <div class="package-sticker">
-            <p>
-                <strong>حزم مخصصة:</strong> حزم مخصصة:توفر الشركة حزمًا مخصصة تناسب الإقامات الطويلة أو الكلاب التي تحتاج إلى رعاية أو متطلبات إضافية غير متوفرة في الحزم الأساسية. يتم تصميم هذه الحزم حسب احتياجات العميل وحالة الكلب الصحية أو السلوكية، لذلك يجب على العملاء التواصل مع الشركة مباشرة لترتيب تفاصيل الحزمة المخصصة والتأكد من تقديم أفضل مستوى من الرعاية المناسبة.
-            </p>
+            <p><strong data-i18n="customPackages">حزم مخصصة</strong><span data-i18n="customPackagesDesc">نوفر حزمًا مخصصة تناسب الإقامات الطويلة أو الكلاب التي تحتاج إلى رعاية إضافية. يتم تصميم هذه الحزم حسب احتياجات العميل وحالة الكلب الصحية أو السلوكية. يرجى التواصل معنا لترتيب تفاصيل الحزمة المخصصة.</span></p>
         </div>
     </div>
 
     <div class="footer-action">
-        <button class="other-facilities-btn" id="go-to-contact">اتصل بنا</button>
+        <button class="other-facilities-btn" id="go-to-contact" data-i18n="contact">اتصل بنا</button>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+

@@ -9,15 +9,26 @@
 <body>
     <div id="settings-sidebar" class="sidebar">
         <div class="sidebar-header">
-            <h3>الإعدادات</h3>
+            <h3 data-i18n="settings">الإعدادات</h3>
             <button id="close-sidebar">×</button>
         </div>
         <div class="setting-item">
-            <span>الوضع الداكن</span>
+            <span data-i18n="darkMode">الوضع الداكن</span>
             <label class="switch">
                 <input type="checkbox" id="dark-mode-toggle">
                 <span class="slider"></span>
             </label>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="fontSize">حجم الخط</span>
+            <div class="setting-controls">
+                <button class="setting-btn" id="font-decrease">A-</button>
+                <button class="setting-btn" id="font-increase">A+</button>
+            </div>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="language">اللغة</span>
+            <button class="setting-btn" id="lang-toggle">عربي</button>
         </div>
     </div>
     <div id="sidebar-overlay" class="overlay"></div>
@@ -32,40 +43,37 @@
     </header>
 
     <nav class="navbar">
-        <button class="nav-button">الصفحة الرئيسية</button>
-        <button class="nav-button">المرافق المقدمة</button>
-        <button class="nav-button">الحزم المقدمة</button>
-        <button class="nav-button">اتصل بنا</button>
+        <button class="nav-button" data-i18n="home">الصفحة الرئيسية</button>
+        <button class="nav-button" data-i18n="facilities">المرافق المقدمة</button>
+        <button class="nav-button" data-i18n="packages">الحزم المقدمة</button>
+        <button class="nav-button" data-i18n="contact">اتصل بنا</button>
     </nav>
 
     <section class="intro-section">
-        <h2 class="intro-title">فندق لوفينغ هومز</h2>
         <div class="intro-container">
-            <p>موقع لوفينغ هومز هو موقع إلكتروني لفندق متخصص في رعاية الكلاب في هونج كونج، يهدف إلى عرض الخدمات والمرافق التي يقدمها بطريقة عصرية وجذابة. يوفر الموقع معلومات تفصيلية عن الحزم المقدمة مثل الحزمة المميزة والكلاسيكية واليومية بالإضافة إلى الخدمات الإضافية للحيوانات الأليفة. كما يساعد العملاء على التواصل مع الشركة وطلب المزيد من المعلومات مع دعم التصفح المرن عبر الأجهزة المختلفة.</p>
+            <p data-i18n="intro">موقع لوفينغ هومز هو موقع إلكتروني لفندق متخصص في رعاية الكلاب في هونج كونج، يهدف إلى عرض الخدمات والمرافق التي يقدمها بطريقة عصرية وجذابة. يوفر الموقع معلومات تفصيلية عن الحزم المقدمة مثل الحزمة المميزة والكلاسيكية واليومية بالإضافة إلى الخدمات الإضافية للحيوانات الأليفة. كما يساعد العملاء على التواصل مع الشركة وطلب المزيد من المعلومات مع دعم التصفح المرن عبر الأجهزة المختلفة.</p>
         </div>
     </section>
 
     <div class="cards-layout">
         <div class="card-item">
-            <h3 class="card-label">اهم المرافق المقدمة</h3>
+            <h3 class="card-label" data-i18n="facilitiesTitle">اهم المرافق المقدمة</h3>
             <div class="card-box">
-                <p>خدمات بيطرية متاحة</p>
+                <p data-i18n="vet">خدمات بيطرية متاحة</p>
                 <img src="images/vet.png" alt="Vet">
             </div>
         </div>
-
         <div class="card-item">
-            <h3 class="card-label">اهم المرافق الأخرى</h3>
+            <h3 class="card-label" data-i18n="otherFacilities">المرافق الأخرى</h3>
             <div class="card-box">
-                <p>مراقبة الحيوانات</p>
+                <p data-i18n="monitoring">مراقبة الحيوانات</p>
                 <img src="images/monitoring.png" alt="Monitor">
             </div>
         </div>
-
         <div class="card-item">
-            <h3 class="card-label">اهم الحزم المقدمة</h3>
+            <h3 class="card-label" data-i18n="packagesTitle">اهم الحزم المقدمة</h3>
             <div class="card-box special-card">
-                <p class="large-text">الحزم المميزة</p>
+                <p class="large-text" data-i18n="specialPackage">الحزم المميزة</p>
             </div>
         </div>
     </div>
@@ -73,3 +81,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+

@@ -9,15 +9,26 @@
 <body>
     <div id="settings-sidebar" class="sidebar">
         <div class="sidebar-header">
-            <h3>الإعدادات</h3>
+            <h3 data-i18n="settings">الإعدادات</h3>
             <button id="close-sidebar">×</button>
         </div>
         <div class="setting-item">
-            <span>الوضع الداكن</span>
+            <span data-i18n="darkMode">الوضع الداكن</span>
             <label class="switch">
                 <input type="checkbox" id="dark-mode-toggle">
                 <span class="slider"></span>
             </label>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="fontSize">حجم الخط</span>
+            <div class="setting-controls">
+                <button class="setting-btn" id="font-decrease">A-</button>
+                <button class="setting-btn" id="font-increase">A+</button>
+            </div>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="language">اللغة</span>
+            <button class="setting-btn" id="lang-toggle">عربي</button>
         </div>
     </div>
     <div id="sidebar-overlay" class="overlay"></div>
@@ -32,30 +43,29 @@
     </header>
 
     <nav class="navbar">
-        <button class="nav-button">الصفحة الرئيسية</button>
-        <button class="nav-button">المرافق المقدمة</button>
-        <button class="nav-button">الحزم المقدمة</button>
-        <button class="nav-button">اتصل بنا</button>
+        <button class="nav-button" data-i18n="home">الصفحة الرئيسية</button>
+        <button class="nav-button" data-i18n="facilities">المرافق المقدمة</button>
+        <button class="nav-button" data-i18n="packages">الحزم المقدمة</button>
+        <button class="nav-button" data-i18n="contact">اتصل بنا</button>
     </nav>
 
     <div class="packages-list">
-        <div class="package-sticker">
-            <p><strong>المميزة:</strong>المميزة : تعد الحزمة المميزة من أعلى الحزم مستوى في الفندق حيث توفر رعاية شاملة للكلب تشمل المشي أربع مرات يوميًا مع ممارسة أربع أنشطة مختلفة تساعد على تحسين اللياقة البدنية والنشاط. يتم تخصيص مساحة عشب خاصة للكلب ليتمكن من اللعب بحرية والاسترخاء في بيئة طبيعية وآمنة وتحت إشراف العاملين. كما يتم إرسال تحديثات وصور يومية للعميل لمتابعة حالة الكلب خلال فترة الإقامة مما يعزز الثقة والاطمئنان. ويمكن أيضًا تقديم مكافآت للحيوان الأليف حسب الاتفاق مع صاحب الكلب لتعزيز السلوك الإيجابي والشعور بالراحة أثناء الإقامة في الفندق.</p>
+        <div class="package-sticker gold">
+            <p><strong data-i18n="premium">المميزة</strong><span data-i18n="premiumDesc">تعد الحزمة المميزة من أعلى الحزم مستوى في الفhotel حيث توفر رعاية شاملة للكلب تشمل المشي أربع مرات يوميًا مع ممارسة أربع أنشطة مختلفة...</span></p>
         </div>
-
-        <div class="package-sticker">
-            <p><strong>الكلاسيكية:</strong>الكلاسيكية:تعد الحزمة الكلاسيكية خيارًا متوسط المستوى يوفر رعاية جيدة للكلب خلال فترة الإقامة، حيث يتم المشي ثلاث مرات يوميًا مع ممارسة ثلاث أنشطة مختلفة تساعد على الحفاظ على نشاطه البدني والصحي. كما تحتوي الحزمة على حظيرة لعب داخلية توفر بيئة آمنة ومناسبة للكلب للمرح داخل الفندق بغض النظر عن الظروف الجوية الخارجية. بالإضافة إلى ذلك تتضمن الحزمة منطقة مخصصة للاسترخاء والراحة بعد اللعب والنشاط، مع تقديم جلسة حلاقة وتنظيف للحفاظ على نظافة الكلب ومظهره ومساعدته على الشعور بالراحة أثناء الإقامة.</p>
+        <div class="package-sticker silver">
+            <p><strong data-i18n="classic">الكلاسيكية</strong><span data-i18n="classicDesc">تعد الحزمة الكلاسيكية خيارًا متوسط المستوى يوفر رعاية جيدة للكلب خلال فترة الإقامة...</span></p>
         </div>
-
-        <div class="package-sticker">
-            <p><strong>اليومية:</strong>اليومية: تعد الحزمة اليومية الخيار الأساسي في الفندق حيث توفر المشي مرتين يوميًا للحفاظ على حركة الكلب ونشاطه خلال فترة الإقامة. كما تشمل منطقة لعب خارجية تسمح للكلب بالاستمتاع بالهواء الطلق وممارسة النشاط البدني تحت إشراف العاملين. وتوفر الحزمة أيضًا مسار الرشاقة الذي يساعد على تحسين لياقة الكلب البدنية وتنمية مهارات الحركة لديه، بالإضافة إلى نشاط حفر حفرة في الرمل الذي يمنح الكلب تجربة ترفيهية تحاكي سلوكه الطبيعي.</p>
+        <div class="package-sticker bronze">
+            <p><strong data-i18n="daily">اليومية</strong><span data-i18n="dailyDesc">تعد الحزمة اليومية الخيار الأساسي في الفhotel حيث توفر المشي مرتين يوميًا...</span></p>
         </div>
     </div>
 
     <div class="footer-action">
-        <button class="other-facilities-btn" id="go-to-custom">حزم مخصصة</button>
+        <button class="other-facilities-btn" id="go-to-custom" data-i18n="customPackages">حزم مخصصة</button>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+

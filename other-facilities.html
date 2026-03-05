@@ -9,15 +9,26 @@
 <body>
     <div id="settings-sidebar" class="sidebar">
         <div class="sidebar-header">
-            <h3>الإعدادات</h3>
+            <h3 data-i18n="settings">الإعدادات</h3>
             <button id="close-sidebar">×</button>
         </div>
         <div class="setting-item">
-            <span>الوضع الداكن</span>
+            <span data-i18n="darkMode">الوضع الداكن</span>
             <label class="switch">
                 <input type="checkbox" id="dark-mode-toggle">
                 <span class="slider"></span>
             </label>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="fontSize">حجم الخط</span>
+            <div class="setting-controls">
+                <button class="setting-btn" id="font-decrease">A-</button>
+                <button class="setting-btn" id="font-increase">A+</button>
+            </div>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="language">اللغة</span>
+            <button class="setting-btn" id="lang-toggle">عربي</button>
         </div>
     </div>
     <div id="sidebar-overlay" class="overlay"></div>
@@ -32,34 +43,35 @@
     </header>
 
     <nav class="navbar">
-        <button class="nav-button">الصفحة الرئيسية</button>
-        <button class="nav-button">المرافق المقدمة</button>
-        <button class="nav-button">الحزم المقدمة</button>
-        <button class="nav-button">اتصل بنا</button>
+        <button class="nav-button" data-i18n="home">الصفحة الرئيسية</button>
+        <button class="nav-button" data-i18n="facilities">المرافق المقدمة</button>
+        <button class="nav-button" data-i18n="packages">الحزم المقدمة</button>
+        <button class="nav-button" data-i18n="contact">اتصل بنا</button>
     </nav>
-
-    <div class="facilities-grid">
+    <div class="other-facilities-grid">
         <div class="sticker-card">
-            <p>1- مراقبة الحيوانات الاليفة: تتيح خدمة مراقبة الحيوانات الأليفة متابعة الكلاب أثناء الإقامة لضمان سلامتها وراحتها من خلال أنظمة مراقبة مستمرة داخل المرافق.</p>
-            <img src="images/monitoring.png" alt="مراقبة الحيوانات">
+            <p class="sticker-text" data-i18n="monitoring">مراقبة الحيوانات</p>
+            <p data-i18n="monitoringDesc">نوفر نظام مراقبة متقدم على مدار الساعة يتيح لأصحاب الكلاب متابعة حيواناتهم الأليفة عن بعد.</p>
+            <img src="images/monitoring.png" alt="Monitoring">
         </div>
-
         <div class="sticker-card">
-            <p>2- التمشية في الغابات: توفر خدمة التمشية في الغابات فرصة للكلاب للاستمتاع بالطبيعة وممارسة النشاط البدني تحت إشراف العاملين لضمان سلامتها أثناء المشي.</p>
-            <img src="images/walking.png" alt="التمشية في الغابات">
+            <p class="sticker-text" data-i18n="walking">المشي اليومي</p>
+            <p data-i18n="walkingDesc">نقدم خدمة المشي اليومي للكلاب مع مدربين محترفين في مناطق آمنة ومخصصة.</p>
+            <img src="images/walking.png" alt="Walking">
         </div>
-
         <div class="sticker-card">
-            <p>3- مساحة عشب خاصة: توفر مساحة العشب الخاصة مكانًا مخصصًا للكلاب للعب والاسترخاء في بيئة طبيعية مريحة وآمنة بعيدًا عن الازدحام. </p>
-            <img src="images/grass-area.png" alt="مساحة عشب">
+            <p class="sticker-text" data-i18n="grassArea">منطقة العشب</p>
+            <p data-i18n="grassAreaDesc">مساحة عشب طبيعية وآمنة للكلاب للعب والركض بحرية مع الاستمتاع بالهواء الطلق.</p>
+            <img src="images/grass-area.png" alt="Grass Area">
         </div>
-
         <div class="sticker-card">
-            <p>4- حظيرة لعب داخلية: توفر حظيرة اللعب الداخلية مساحة آمنة ومغلقة للكلاب لممارسة الأنشطة واللعب بحرية بغض النظر عن الظروف الجوية الخارجية.</p>
-            <img src="images/indoor-play.png" alt="حظيرة لعب">
+            <p class="sticker-text" data-i18n="indoorPlay">منطقة لعب داخلية</p>
+            <p data-i18n="indoorPlayDesc">منطقة لعب داخلية آمنة ومجهزة بألعاب متنوعة للكلاب للمرح بغض النظر عن الطقس.</p>
+            <img src="images/indoor-play.png" alt="Indoor Play">
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+

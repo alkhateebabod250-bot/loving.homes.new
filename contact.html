@@ -9,15 +9,26 @@
 <body>
     <div id="settings-sidebar" class="sidebar">
         <div class="sidebar-header">
-            <h3>الإعدادات</h3>
+            <h3 data-i18n="settings">الإعدادات</h3>
             <button id="close-sidebar">×</button>
         </div>
         <div class="setting-item">
-            <span>الوضع الداكن</span>
+            <span data-i18n="darkMode">الوضع الداكن</span>
             <label class="switch">
                 <input type="checkbox" id="dark-mode-toggle">
                 <span class="slider"></span>
             </label>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="fontSize">حجم الخط</span>
+            <div class="setting-controls">
+                <button class="setting-btn" id="font-decrease">A-</button>
+                <button class="setting-btn" id="font-increase">A+</button>
+            </div>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="language">اللغة</span>
+            <button class="setting-btn" id="lang-toggle">عربي</button>
         </div>
     </div>
     <div id="sidebar-overlay" class="overlay"></div>
@@ -32,29 +43,29 @@
     </header>
 
     <nav class="navbar">
-        <button class="nav-button">الصفحة الرئيسية</button>
-        <button class="nav-button">المرافق المقدمة</button>
-        <button class="nav-button">الحزم المقدمة</button>
-        <button class="nav-button">اتصل بنا</button>
+        <button class="nav-button" data-i18n="home">الصفحة الرئيسية</button>
+        <button class="nav-button" data-i18n="facilities">المرافق المقدمة</button>
+        <button class="nav-button" data-i18n="packages">الحزم المقدمة</button>
+        <button class="nav-button" data-i18n="contact">اتصل بنا</button>
     </nav>
 
     <div class="contact-container">
         <div class="contact-sticker">
             <form id="contact-form">
                 <div class="form-group">
-                    <label>الاسم:</label>
+                    <label data-i18n="name">الاسم:</label>
                     <input type="text" id="user-name" required>
                 </div>
                 <div class="form-group">
-                    <label>البريد الالكتروني:</label>
+                    <label data-i18n="email">البريد الإلكتروني:</label>
                     <input type="email" id="user-email" required>
                 </div>
                 <div class="form-group">
-                    <label>الرسالة:</label>
-                    <textarea id="user-message" rows="4" required placeholder="اكتب رسالتك هنا..."></textarea>
+                    <label data-i18n="message">الرسالة:</label>
+                    <textarea id="user-message" rows="4" required data-i18n-placeholder="formPlaceholder" placeholder="اكتب رسالتك هنا..."></textarea>
                 </div>
                 <div class="form-submit">
-                    <button type="submit" class="submit-btn">ارسال</button>
+                    <button type="submit" class="submit-btn" data-i18n="send">ارسال</button>
                 </div>
             </form>
         </div>
@@ -63,3 +74,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+

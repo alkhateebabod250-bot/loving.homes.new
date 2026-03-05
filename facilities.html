@@ -9,15 +9,26 @@
 <body>
     <div id="settings-sidebar" class="sidebar">
         <div class="sidebar-header">
-            <h3>الإعدادات</h3>
+            <h3 data-i18n="settings">الإعدادات</h3>
             <button id="close-sidebar">×</button>
         </div>
         <div class="setting-item">
-            <span>الوضع الداكن</span>
+            <span data-i18n="darkMode">الوضع الداكن</span>
             <label class="switch">
                 <input type="checkbox" id="dark-mode-toggle">
                 <span class="slider"></span>
             </label>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="fontSize">حجم الخط</span>
+            <div class="setting-controls">
+                <button class="setting-btn" id="font-decrease">A-</button>
+                <button class="setting-btn" id="font-increase">A+</button>
+            </div>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="language">اللغة</span>
+            <button class="setting-btn" id="lang-toggle">عربي</button>
         </div>
     </div>
     <div id="sidebar-overlay" class="overlay"></div>
@@ -32,39 +43,45 @@
     </header>
 
     <nav class="navbar">
-        <button class="nav-button">الصفحة الرئيسية</button>
-        <button class="nav-button">المرافق المقدمة</button>
-        <button class="nav-button">الحزم المقدمة</button>
-        <button class="nav-button">اتصل بنا</button>
+        <button class="nav-button" data-i18n="home">الصفحة الرئيسية</button>
+        <button class="nav-button" data-i18n="facilities">المرافق المقدمة</button>
+        <button class="nav-button" data-i18n="packages">الحزم المقدمة</button>
+        <button class="nav-button" data-i18n="contact">اتصل بنا</button>
     </nav>
 
     <div class="facilities-grid">
         <div class="sticker-card">
-            <p>1- صالة للحلاقة ومنتجع : توفر صالة الحلاقة والمنتجع خدمات العناية بالكلاب مثل تنظيف الفراء وتصفيفه في بيئة مريحة وآمنة، مما يساعد على الحفاظ على مظهر الحيوان الأليف وصحته العامة.</p>
+            <p class="sticker-text" data-i18n="grooming">صالة للحلاقة ومنتجع</p>
+            <p data-i18n="groomingDesc">توفر صالة الحلاقة والمنتجع خدمات العناية الشاملة بالكلاب...</p>
             <img src="images/grooming.png" alt="Grooming">
         </div>
         <div class="sticker-card">
-            <p>2- غرفة مزودة بتدفئة: تتوفر غرف مخصصة مزودة بتدفئة وتبريد تحت الأرضية مع تلفزيون لتوفير بيئة مريحة ومناسبة للكلاب أثناء الإقامة وضمان شعورها بالراحة والاسترخاء.</p>
+            <p class="sticker-text" data-i18n="heating">غرفة مزودة بتدفئة</p>
+            <p data-i18n="heatingDesc">غرف مخصصة مزودة بتدفئة وتبريد تحت الأرضية...</p>
             <img src="images/heating.png" alt="Heating">
         </div>
         <div class="sticker-card">
-            <p>3- خدمة التوصيل: تقدم الشركة خدمة التوصيل من وإلى المكان لتسهيل نقل الكلاب للعملاء وضمان وصولها بأمان وراحة إلى الفندق أو إلى منزل العميل.</p>
+            <p class="sticker-text" data-i18n="delivery">خدمة التوصيل</p>
+            <p data-i18n="deliveryDesc">خدمة التوصيل من وإلى المكان لتسهيل نقل الكلاب...</p>
             <img src="images/delivery.jpg" alt="Delivery">
         </div>
         <div class="sticker-card">
-            <p>4- مراعي خارجية أمنة: توفر المراعي الخارجية الآمنة مساحة مفتوحة ومسيجة للكلاب للركض واللعب بحرية مع الحفاظ على سلامتها ومراقبتها بشكل مستمر.</p>
+            <p class="sticker-text" data-i18n="safePastures">مراعي خارجية أمنة</p>
+            <p data-i18n="safePasturesDesc">مراعي خارجية آمنة ومساحة مفتوحة للكلاب للركض...</p>
             <img src="images/safe-pastures.png" alt="Safe Pastures">
         </div>
         <div class="sticker-card">
-            <p>5- خدمات بيطرية متاحة: تتوفر خدمات بيطرية على مدار 24 ساعة لمتابعة صحة الكلاب وتقديم الرعاية الطبية اللازمة في حالات الطوارئ أو الفحوصات الدورية.</p>
+            <p class="sticker-text" data-i18n="vet">خدمات بيطرية متاحة</p>
+            <p data-i18n="vetDesc">خدمات بيطرية على مدار 24 ساعة لمتابعة صحة الكلاب...</p>
             <img src="images/vet.png" alt="Vet">
         </div>
     </div>
 
     <div class="footer-action">
-        <button class="other-facilities-btn" id="go-to-other">مرافق أخرى</button>
+        <button class="other-facilities-btn" id="go-to-other" data-i18n="moreFacilities">مرافق أخرى</button>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
